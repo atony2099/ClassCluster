@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HintView.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,18 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)loadSuccess:(id)sender {
+    
+    HintView *view = [HintView viewWithType:HintViewTypeSuccess];
+    [view showToView:self.view];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)loadFail:(id)sender {
+    
+    HintView *view = [HintView viewWithType:HintViewTypeFail];
+    [view showToView:self.view];
 }
+
 
 @end
