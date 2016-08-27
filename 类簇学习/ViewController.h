@@ -1,0 +1,15 @@
+//
+//  ViewController.h
+//  类簇学习
+//
+//  Created by admin on 16/8/27.
+//  Copyright © 2016年 atony2099. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController
+
+
+@end
+
